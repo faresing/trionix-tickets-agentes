@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; background: #f3f4f6; color: #111827; }
+header { background: #1e3a8a; color: #fff; padding: 1rem 2rem; }
+header h1 { margin: 0; font-size: 1.4rem; }
+main { display: grid; grid-template-columns: 320px 1fr; gap: 1rem; padding: 1rem 2rem; }
+@media (max-width: 800px) { main { grid-template-columns: 1fr; padding: 1rem; } }
+.panel { background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 1px 3px #0002; }
+h2 { margin: 0.5rem 0; font-size: 1.1rem; }
+form { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+input, select, button { padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 6px; font: inherit; }
+button { background: #2563eb; color: #fff; border: 0; cursor: pointer; }
+button:hover { background: #1d4ed8; }
+button.rojo { background: #dc2626; }
+button.verde { background: #16a34a; }
+.msg { margin: 1rem 2rem 0; padding: 0.75rem 1rem; border-radius: 6px; }
+.msg.error { background: #fee2e2; color: #991b1b; }
+.msg.ok { background: #dcfce7; color: #166534; }
+.filtros { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.ticket { border: 1px solid #e5e7eb; border-radius: 8px; padding: 0.75rem; margin-bottom: 0.75rem; }
+.ticket h3 { margin: 0 0 0.25rem; font-size: 1rem; }
+.badge { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 99px; font-size: 0.75rem; color: #fff; }
+.alta { background: #dc2626; } .media { background: #d97706; } .baja { background: #059669; }
+.abierto { background: #2563eb; } .resuelto { background: #6b7280; }
+.acciones { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; align-items: center; }
+.comentarios { font-size: 0.85rem; margin: 0.5rem 0; padding-left: 1rem; color: #374151; }
+.form-com { display: flex; gap: 0.25rem; margin-top: 0.5rem; }
+.form-com input { flex: 1; min-width: 0; }
+#lista-agentes { padding-left: 1rem; margin: 0; font-size: 0.9rem; }
+.inactivo { color: #9ca3af; }
